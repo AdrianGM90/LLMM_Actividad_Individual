@@ -2,3 +2,4 @@ Background: https://img.freepik.com/vector-gratis/fondo-futurista-cibernetico-de
 Programmer: https://img.freepik.com/vector-gratis/ilustracion-concepto-trabajo_114360-27000.jpg?t=st=1745146308~exp=1745149908~hmac=752ee96e1da4fa957c391d94c74cceb55d09ea61e10af9331d850824f0582ae0&w=740
 Central: https://img.freepik.com/foto-gratis/vista-central-nuclear-torres-que-dejan-salir-vapor-proceso_23-2150957698.jpg?t=st=1745164962~exp=1745168562~hmac=ae9937eca72257541bc8e80128c223f427ab744dd2b0295e361baee0e22b402e&w=996
 backend: https://img.freepik.com/foto-gratis/encendido-computadora-portatil-gris_400718-47.jpg?t=st=1745165498~exp=1745169098~hmac=6060c55b42a565bb8af74bb4caad460048f8c10063efc1233d24f320f3ca4e42&w=996
+Favicon: https://www.flaticon.es/icono-gratis/backend_6007875?term=backend&page=1&position=1&origin=search&related_id=6007875
