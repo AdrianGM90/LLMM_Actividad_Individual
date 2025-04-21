@@ -13,37 +13,40 @@
     <div class="general">
         <div class="formulario">
             <h2>Contacto</h2>
-            <form action="mailto:adrian.guerrero.martinez.1990@gmail.com" name="Datos Personales" method="post">
-                <p>DATOS PERSONALES
-                <div class="dato">
-                    <label for="Nombre">Nombre: </label><input type="text" name="Nombre" required placeholder="Nombre">
-                </div>
-                <div class="dato">
-                    <label for="Apellidos">Apellidos: </label><input type="text" name="Apellidos" required
-                        placeholder="Apellidos">
-                </div>
-                <div class="dato">
-                    <label for="DNI">DNI: </label><input type="text" name="DNI" required placeholder="DNI">
-                </div>
-                <div class="dato">
-                    <label for="Email">Email: </label><input type="text" name="Email" required placeholder="Email">
-                </div>
-                <div class="dato">
-                    <label for="Telefono">Teléfono: </label><input type="tel" name="Telefono" required
-                        placeholder="XXX XXX XXX">
-                </div>
-                <div class="dato">
-                    <label for="FechaNacimiento">Fecha de nacimiento: </label><input type="date" name="FechaNacimiento" required
-                        placeholder="DD/MM/AAAA">
-                </div>
-                <div class="dato">
-                    <label for="Sexo">Sexo: </label>
-                    <br><label for="Sexo"></label><input type="radio" name="Sexo" value="Hombre"><span>Hombre</span>
-                    <br><label for="Sexo"></label><input type="radio" name="Sexo" value="Mujer"><span>Mujer</span>
-                </div>
-                </p>
+            <div class="formbox">
+                <for action="mailto:adrian.guerrero.martinez.1990@gmail.com" name="Datos Personales" method="post">
+                    <p>DATOS PERSONALES</p>
+                    <div class="dato">
+                        <label for="Nombre">Nombre: </label><input type="text" name="Nombre" required
+                            placeholder="Nombre">
+                    </div>
+                    <div class="dato">
+                        <label for="Apellidos">Apellidos: </label><input type="text" name="Apellidos" required
+                            placeholder="Apellidos">
+                    </div>
+                    <div class="dato">
+                        <label for="DNI">DNI: </label><input type="text" name="DNI" required placeholder="DNI">
+                    </div>
+                    <div class="dato">
+                        <label for="Email">Email: </label><input type="text" name="Email" required placeholder="Email">
+                    </div>
+                    <div class="dato">
+                        <label for="Telefono">Teléfono: </label><input type="tel" name="Telefono" required
+                            placeholder="XXX XXX XXX">
+                    </div>
+                    <div class="dato">
+                        <label for="FechaNacimiento">Fecha de nacimiento: </label><input type="date"
+                            name="FechaNacimiento" required placeholder="DD/MM/AAAA">
+                    </div>
+                    <div class="dato">
+                        <label for="Sexo">Sexo: </label>
+                        <br><label for="Sexo"></label><input type="radio" name="Sexo" value="Hombre"><span>Hombre</span>
+                        <br><label for="Sexo"></label><input type="radio" name="Sexo" value="Mujer"><span>Mujer</span>
+                    </div>
+            </div>
 
-                <p>DIRECCIÓN
+            <div class="formbox">
+                <p>DIRECCIÓN</p>
                 <div class=" dato">
                     <label for="Pais">País: </label><input type="text" name="Pais" required placeholder="País">
                 </div>
@@ -67,15 +70,19 @@
                 <div class="dato">
                     <label for="Piso">Piso: </label><input type="number" name="Piso" placeholder="Piso">
                 </div>
-                </p>
-                
-                <p class="botones">
-                    <div><input class="enlaceform" type="submit" value="Enviar"></div>
-                    <div><input class="enlaceform" type="reset" value="Borrar"></div>
-                </p>
+            </div>
+
+            <div class="botones">
+                <div><input class="enlaceform" type="submit" value="Enviar"></div>
+                <div><input class="enlaceform" type="reset" value="Borrar"></div>
+            </div>
         </div>
-        
-        </form>
+
+    </div>
+    </form>
+    <div class="botones">
+        <a href="./index.html" class="enlace">Página principal</a>
+    </div>
     </div>
 
 </body>
