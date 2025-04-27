@@ -4,44 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria iconos web https://ionic.io/ionicons/usage -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/Favicon.png" type="img/x-icon">
     <title>Quién soy</title>
 </head>
 
 <body>
-    <div class="general">
-        <div class="titulo">
-            <h2>Quién soy</h2>
-            <p>
-                ¡Hola! Deja que me presente. Me llamo Adrián Guerrero Martínez.
-            </p>
-            <img id="perfil" src="./img/Perfil.jpg" alt="Adrián Guerrero Martínez">
-            <p>
-                Soy técnico en programación de la producción en fabricación mecánica y trabajo como delineante.
-                <br>Me dedico profesionalmente a la ingeniería, y específicamente al ámbito del
-                aprovechamiento de energía y al diseño de centrales energéticas de todo tipo.
-            </p>
-            <!-- https://img.freepik.com/foto-gratis/vista-central-nuclear-torres-que-dejan-salir-vapor-proceso_23-2150957698.jpg?t=st=1745164962~exp=1745168562~hmac=ae9937eca72257541bc8e80128c223f427ab744dd2b0295e361baee0e22b402e&w=996 -->
-            <img id="central" src="./img/Central.jpg" alt="Central nuclear">
-            <p>
-                Al mismo tiempo, soy estudiante del ciclo de grado superior de desarrollo de aplicaciones
-                multiplataforma.
-                <br>Mis intereses se centran en el desarrollo backend.
-            </p>
-            <!-- https://img.freepik.com/foto-gratis/encendido-computadora-portatil-gris_400718-47.jpg?t=st=1745165498~exp=1745169098~hmac=6060c55b42a565bb8af74bb4caad460048f8c10063efc1233d24f320f3ca4e42&w=996 -->
-            <img id="backend" src="./img/backend.jpg" alt="Desarrollo backend">
-            <p>
-                Puedes consultar mas información sobre mi a través de mi currículum vitae en la siguiente pestaña...
-            </p>
-            <a href="./cv.html" class="enlace">Currículum Vitae</a>
-            <p>
-                ...o volver a la página principal.
-            </p>
-            <a href="./index.html" class="enlace">Página principal</a>
+    <header>
+        <a href="./index.html" class="logoHome">
+            <ion-icon name="home-outline"></ion-icon>
+        </a>
+        <ul class="navbar">
+            <li>
+                <a href="./quiensoy.html" class="linkEnUso">Quién soy</a>
+            </li>
+            <li>
+                <a href="./cv.html">CV</a>
+            </li>
+            <li>
+                <a href="./proyectos.html">Proyectos destacados</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="general">
+            <div class="titulo">Quién soy</div>
+            <div class="bloque">
+                <div class="descripcion">
+                    ¡Hola! Deja que me presente. Me llamo Adrián Guerrero Martínez.
+                </div>
+                <div>
+                    <img src="./img/Perfil.jpg" alt="Adrián Guerrero Martínez">
+                </div>
+            </div>
 
+            <div class="bloque">
+                <div class="descripcion">
+                    Soy técnico en programación de la producción en fabricación mecánica y trabajo como
+                    delineante.
+                    <br>Me dedico profesionalmente a la ingeniería, y específicamente al ámbito del
+                    aprovechamiento de energía y al diseño de centrales energéticas de todo tipo.
+                </div>
+                <div>
+                    <!-- https://img.freepik.com/foto-gratis/vista-central-nuclear-torres-que-dejan-salir-vapor-proceso_23-2150957698.jpg?t=st=1745164962~exp=1745168562~hmac=ae9937eca72257541bc8e80128c223f427ab744dd2b0295e361baee0e22b402e&w=996 -->
+                    <img src="./img/Central.jpg" alt="Central nuclear">
+                </div>
+            </div>
+
+            <div class="bloque">
+                <div class="descripcion">
+                    Al mismo tiempo, soy estudiante del ciclo de grado superior de desarrollo de aplicaciones
+                    multiplataforma.
+                    <br>Mis intereses se centran principalmente en el desarrollo backend.
+                </div>
+                <div>
+                    <!-- https://img.freepik.com/foto-gratis/encendido-computadora-portatil-gris_400718-47.jpg?t=st=1745165498~exp=1745169098~hmac=6060c55b42a565bb8af74bb4caad460048f8c10063efc1233d24f320f3ca4e42&w=996 -->
+                    <img src="./img/backend.jpg" alt="Desarrollo backend">
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <div class="descripcion">
+            Puedes consultar mas información sobre mi a través de mi currículum vitae en la siguiente pestaña...
+        </div>
+        <div>
+            <a href="./cv.html" class="enlace">Currículum Vitae</a>
+        </div>
+        <div class="descripcion">
+            ...o volver a la página principal.
+        </div>
+        <div>
+            <a href="./index.html" class="enlace">Página principal</a>
+        </div>
+
+        <ul class="redesSociales">
+            <li>
+                <a href="mailto:adrian.guerrero.martinez.1990@gmail.com" target="_blank">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-guerrero-mart%C3%ADnez-430921255" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/AdrianGM90" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 

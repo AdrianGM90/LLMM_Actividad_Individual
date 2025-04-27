@@ -197,10 +197,13 @@ header .navbar li a:hover{
     color: purple;
 }
 
+main{
+    margin-top: 60px;
+}
+
 .general{
-    position: relative;
-    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -208,49 +211,57 @@ header .navbar li a:hover{
 .titulo{
     text-align: center;
     max-width: 800px;
-}
-
-.titulo h2{
     font-size: 4em;
+    font-weight: 600;
     text-transform: uppercase;
     color: white;
+    margin-top: 6vh;
     padding: 20px;
 }
 
-.general h2{
-    font-size: 4em;
-    text-transform: uppercase;
-    color: white;
-    padding: 20px;
-}
-
-.general h3{
-    font-size: 3em;
-    text-transform: uppercase;
-    color: white;
-    padding: 10px;
-}
-
-.general .titulo p{
+.descripcion{
+    text-align: center;
+    font-family: 'Blinker', sans-serif;
     font-size: 2em;
     color: white;
-    padding: 20px;
-    font-family: "Blinker", sans-serif;
+    margin: 1em;
 }
 
-#perfil{
-    width: 60%;
-    padding: 10px;
+.bloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#central{
+.bloque img{
+    width: 50em;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0px;
     width: 100%;
-    padding: 10px;
+    padding: 40px 100px;
 }
 
-#backend{
-    width: 100%;
-    padding: 10px;
+header .navbar li a.linkEnUso{
+    background-color: white;
+    color: purple;
+}
+
+.logoHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    color: red;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 6em;
+    border-radius: 3em;
 }
 
 .enlace{
