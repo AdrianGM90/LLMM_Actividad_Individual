@@ -4,47 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria iconos web https://ionic.io/ionicons/usage -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/Favicon.png" type="img/x-icon">
     <title>CV</title>
 </head>
 
 <body>
-    <div class="general">
-        <div class="cv">
-            <h2>Currículum Vitae</h2>
-            <h3>Descripción personal</h3>
-            <p>Soy proactivo, diligente, resolutivo, metódico, organizado y comprometido con mi trabajo.
-                <br>Siempre estoy dispuesto a aprender habilidades nuevas y a mejorar mis habilidades actuales, dado que
-                considero que el aprendizaje permanente y la mejora continua constituyen dos valores fundamentales que
-                definen mi forma de ser y mi perspectiva sobre el trabajo.
-                <br>Destaco en el diseño de planos, el empleo de software de diseño CAD-CAM y el modelado de piezas.
-            </p>
-            <h3>Educación</h3>
-            <ul>
-                <li>2021-2023: Colegio Salesianos Atocha
-                    <br> Grado superior en programacion de la producción en fabricación mecánica.
-                </li>
-                <li>
-                    2024-Actualidad: UNIR FP
-                    <br> Grado superior en desarrollo de aplicaciones multiplataforma.
-                </li>
-            </ul>
-            <h3>Experiencia laboral</h3>
+    <header>
+        <a href="./index.html" class="logoHome">
+            <ion-icon name="home-outline"></ion-icon>
+        </a>
+        <ul class="navbar">
             <li>
-                <p>
-                    2010-2023: Ejército del aire y del espacio.
-                    <br> Tropa e infantería especialidad seguridad y defensa.
-                    <br> Responsable de realizar tareas de seguridad, control de personal, vigilancia de instalaciones y
-                    acciones de respuesta rápida.
-                </p>
-                <p>
-                    2023-Actualidad: Empresarios Agrupados Internacional S.A.I.
-                    <br> Técnico en delineación.
-                    <br> Responsable de delineación de diagramas de proceso e instrumentación (P&ID) y modelado de
-                    sistemas en instalaciones mediante herramientas especializadas.
-                </p>
+                <a href="./quiensoy.html">Quién soy</a>
             </li>
+            <li>
+                <a href="./cv.html" class="linkEnUso">CV</a>
+            </li>
+            <li>
+                <a href="./proyectos.html">Proyectos destacados</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="general">
+            <div class="titulo">Currículum Vitae</div>
+            <div class="bloque">
+                <div class="subtitulo">Descripción personal</div>
+                <div class="descripcion">Soy proactivo, diligente, resolutivo, metódico, organizado y comprometido con
+                    mi trabajo.
+                    <br>Siempre estoy dispuesto a aprender habilidades nuevas y a mejorar mis habilidades actuales, dado
+                    que
+                    considero que el aprendizaje permanente y la mejora continua constituyen dos valores fundamentales
+                    que
+                    definen mi forma de ser y mi perspectiva sobre el trabajo.
+                    <br>Destaco en el diseño de planos, el empleo de software de diseño CAD-CAM y el modelado de piezas.
+                </div>
+            </div>
+
+            <div class="bloque">
+                <div class="subtitulo">Educación</div>
+                <ul>
+                    <li>2021-2023: Colegio Salesianos Atocha</li>
+                    <div class="descripcion">Grado superior en programacion de la producción en fabricación mecánica.
+                    </div>
+
+                    <li>2024-Actualidad: UNIR FP</li>
+                    <div class="descripcion"> Grado superior en desarrollo de aplicaciones multiplataforma.</div>
+
+                </ul>
+            </div>
+
+            <div class="bloque">
+                <div class="subtitulo">Experiencia laboral</div>
+                <ul>
+                    <li>2010-2023: Ejército del aire y del espacio.</li>
+                    <div class="descripcion">Tropa e infantería especialidad seguridad y defensa.
+                        <br> Responsable de realizar tareas de seguridad, control de personal, vigilancia de
+                        instalaciones y acciones de respuesta rápida.
+                    </div>
+
+                    <li>2023-Actualidad: Empresarios Agrupados Internacional S.A.I.</li>
+                    <div class="descripcion"> Técnico en delineación.
+                        <br> Responsable de delineación de diagramas de proceso e instrumentación (P&ID) y modelado de
+                        sistemas en instalaciones mediante herramientas especializadas.
+                    </div>
+                </ul>
+            </div>
+
+
             <h3>Habilidades profesionales</h3>
             <ul>
                 <li>Software de diseño CAD-CAM: Autocad, Solid Edge, Mastercam, Catia.</li>
@@ -73,16 +107,40 @@
                 <li>2022: Certificado básico y profesional de manejo de brazos robot expedido por Universal Robots
                     Academy.</li>
             </ul>
-
-            <p>
-                Puedes consultar mas información sobre mis proyectos en la pestaña siguiente...
-            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="descripcion">
+            Puedes consultar mas información sobre mis proyectos en la pestaña siguiente...
+        </div>
+        <div>
             <a href="./proyectos.html" class="enlace">Proyectos destacados</a>
-            <p>
-                ...o volver a la página principal.
-            </p>
+        </div>
+        <div class="descripcion">
+            ...o volver a la página principal.
+        </div>
+        <div>
             <a href="./index.html" class="enlace">Página principal</a>
+        </div>
 
+        <ul class="redesSociales">
+            <li>
+                <a href="mailto:adrian.guerrero.martinez.1990@gmail.com" target="_blank">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-guerrero-mart%C3%ADnez-430921255" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/AdrianGM90" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>

@@ -206,6 +206,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 1200px;
+    margin: auto;
 }
 
 .titulo{
@@ -219,6 +221,26 @@ main{
     padding: 20px;
 }
 
+.subtitulo{
+    text-align: center;
+    max-width: 800px;
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+.bloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.bloque img{
+    width: 50em;
+}
+
 .descripcion{
     text-align: center;
     font-family: 'Blinker', sans-serif;
@@ -227,15 +249,13 @@ main{
     margin: 1em;
 }
 
-.bloque{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.bloque ul li{
+    font-family: 'Blinker', sans-serif;
+    font-size: 2em;
+    color: white;
+    margin: 0.5em;
 }
 
-.bloque img{
-    width: 50em;
-}
 
 footer{
     position: relative;
