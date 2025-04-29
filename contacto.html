@@ -4,18 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria iconos web https://ionic.io/ionicons/usage -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/Favicon.png" type="img/x-icon">
     <title>Contacto</title>
 </head>
 
 <body>
-    <div class="general">
-        <div class="formulario">
-            <h2>Contacto</h2>
-            <div class="formbox">
-                <for action="mailto:adrian.guerrero.martinez.1990@gmail.com" name="Datos Personales" method="post">
-                    <p>DATOS PERSONALES</p>
+    <header>
+        <a href="./index.html" class="logoHome">
+            <ion-icon name="home-outline"></ion-icon>
+        </a>
+        <ul class="navbar">
+            <li>
+                <a href="./quiensoy.html">Quién soy</a>
+            </li>
+            <li>
+                <a href="./cv.html">CV</a>
+            </li>
+            <li>
+                <a href="./proyectos.html">Proyectos destacados</a>
+            </li>
+            <li>
+                <a href="./contacto.html" class="linkEnUso">Contacto</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="general">
+            <div class="titulo">Contacto</div>
+            <form action="mailto:adrian.guerrero.martinez.1990@gmail.com" name="Datos Personales" method="post">
+                <div class="formbox">
+                    <div class="subtitulo formulario">DATOS PERSONALES</div>
                     <div class="dato">
                         <label for="Nombre">Nombre: </label><input type="text" name="Nombre" required
                             placeholder="Nombre">
@@ -43,47 +66,76 @@
                         <br><label for="Sexo"></label><input type="radio" name="Sexo" value="Hombre"><span>Hombre</span>
                         <br><label for="Sexo"></label><input type="radio" name="Sexo" value="Mujer"><span>Mujer</span>
                     </div>
-            </div>
+                </div>
 
-            <div class="formbox">
-                <p>DIRECCIÓN</p>
-                <div class=" dato">
-                    <label for="Pais">País: </label><input type="text" name="Pais" required placeholder="País">
-                </div>
-                <div class=" dato">
-                    <label for="Provincia">Provincia: </label><input type="text" name="Provincia"
-                        placeholder="Provincia">
-                </div>
-                <div class=" dato">
-                    <label for="Ciudad">Ciudad: </label><input type="text" name="Ciudad" required placeholder="Ciudad">
-                </div>
-                <div class="dato">
-                    <label for="CodigoPostal">Código Postal: </label><input type="number" name="CodigoPostal" required
-                        placeholder="XXXXX" min="00000" max="99999"">
+                <div class="formbox">
+                    <div class="subtitulo formulario">DIRECCIÓN</div>
+                    <div class=" dato">
+                        <label for="Pais">País: </label><input type="text" name="Pais" required placeholder="País">
+                    </div>
+                    <div class=" dato">
+                        <label for="Provincia">Provincia: </label><input type="text" name="Provincia"
+                            placeholder="Provincia">
+                    </div>
+                    <div class=" dato">
+                        <label for="Ciudad">Ciudad: </label><input type="text" name="Ciudad" required
+                            placeholder="Ciudad">
+                    </div>
+                    <div class="dato">
+                        <label for="CodigoPostal">Código Postal: </label><input type="number" name="CodigoPostal"
+                            required placeholder="XXXXX" min="00000" max="99999"">
                         </div>
                 <div class=" dato">
-                    <label for="Calle">Calle: </label><input type="text" name="Calle" required placeholder="Dirección">
+                        <label for="Calle">Calle: </label><input type="text" name="Calle" required
+                            placeholder="Dirección">
+                    </div>
+                    <div class="dato">
+                        <label for="Numero">Número: </label><input type="number" name="Numero" required
+                            placeholder="Nº">
+                    </div>
+                    <div class="dato">
+                        <label for="Piso">Piso: </label><input type="number" name="Piso" placeholder="Piso">
+                    </div>
                 </div>
-                <div class="dato">
-                    <label for="Numero">Número: </label><input type="number" name="Numero" required placeholder="Nº">
-                </div>
-                <div class="dato">
-                    <label for="Piso">Piso: </label><input type="number" name="Piso" placeholder="Piso">
-                </div>
-            </div>
 
-            <div class="botones">
-                <div><input class="enlaceform" type="submit" value="Enviar"></div>
-                <div><input class="enlaceform" type="reset" value="Borrar"></div>
-            </div>
+                <div class="formbox">
+                    <div class="subtitulo formulario">MENSAJE</div>
+                    <div class=" dato">
+                        <textarea name="mensaje" id=""></textarea>
+                    </div>
+                </div>
+
+                    <div class="botones">
+                        <div><input class="enlaceform" type="submit" value="Enviar"></div>
+                        <div><input class="enlaceform" type="reset" value="Borrar"></div>
+                    </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="./index.html" class="enlace">Página principal</a>
         </div>
 
-    </div>
-    </form>
-    <div class="botones">
-        <a href="./index.html" class="enlace">Página principal</a>
-    </div>
-    </div>
+        <ul class="redesSociales">
+            <li>
+                <a href="mailto:adrian.guerrero.martinez.1990@gmail.com" target="_blank">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-guerrero-mart%C3%ADnez-430921255" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/AdrianGM90" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 

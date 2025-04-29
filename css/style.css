@@ -344,24 +344,22 @@ header .navbar li a.linkEnUso{
     transition: 1s;
 }
 
-.formulario{
+.formbox{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    max-width: 1200px;
-    gap: 10px;
-}
-
-.formulario h2{
-    padding:10px ;
-}
-
-.formulario p{
-    font-size: 2em;
-    color: white;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px 0px;
     margin: 10px;
-    font-family: "Blinker", sans-serif;
-    font-weight: 600;
+}
+
+.formulario{
+    font-size: 2.5em;
 }
 
 .dato{
@@ -401,12 +399,5 @@ header .navbar li a.linkEnUso{
     display: flex;
     justify-content: center;
     gap: 15%;
-    margin: 10px;
-}
-
-.formbox{
-    border: 2px solid white;
-    border-radius: 20px;
-    padding-bottom: 20px;
     margin: 10px;
 }
