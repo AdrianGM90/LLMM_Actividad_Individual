@@ -212,7 +212,7 @@ main{
 
 .titulo{
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     font-size: 4em;
     font-weight: 600;
     text-transform: uppercase;
@@ -223,7 +223,7 @@ main{
 
 .subtitulo{
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     font-size: 3em;
     font-weight: 400;
     text-transform: uppercase;
@@ -235,10 +235,11 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 1em;
+    width: 900px;
 }
 
 .bloque img{
-    width: 50em;
+    width: 30vw;
 }
 
 .descripcion{
@@ -247,15 +248,45 @@ main{
     font-size: 2em;
     color: white;
     margin: 1em;
+    width: 900px;
+}
+
+.personal{
+    text-align: left;
 }
 
 .bloque ul li{
     font-family: 'Blinker', sans-serif;
     font-size: 2em;
+    font-weight: 600;
     color: white;
+    margin-left: 0;
     margin: 0.5em;
+    list-style: none;
 }
 
+.bloque p{
+    text-align: left;
+    font-family: 'Blinker', sans-serif;
+    font-size: 2em;
+    color: white;
+    margin: 1em;
+    margin-left: 10px;
+    width: 900px;
+}
+
+.habilidades{
+    margin-left: -170px;
+}
+
+.cursosacreditaciones{
+    margin-left: -17px;
+}
+
+.textonormal{
+    font-family: 'Blinker', sans-serif;
+    font-weight: 400;
+}
 
 footer{
     position: relative;
@@ -277,11 +308,12 @@ header .navbar li a.linkEnUso{
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
-    color: red;
+    color: purple;
     width: 1.5em;
     height: 1.5em;
     font-size: 6em;
     border-radius: 3em;
+    border: 4px solid purple;
 }
 
 .enlace{
