@@ -4,44 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria iconos web https://ionic.io/ionicons/usage -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/Favicon.png" type="img/x-icon">
     <title>Proyectos destacados</title>
 </head>
 
 <body>
-    <div class="general">
-        <div class="proyectos">
-            <h2>Proyectos destacados</h2>
-            <p>
+    <header>
+        <a href="./index.html" class="logoHome">
+            <ion-icon name="home-outline"></ion-icon>
+        </a>
+        <ul class="navbar">
+            <li>
+                <a href="./quiensoy.html">Quién soy</a>
+            </li>
+            <li>
+                <a href="./cv.html">CV</a>
+            </li>
+            <li>
+                <a href="./proyectos.html" class="linkEnUso">Proyectos destacados</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="general">
+            <div class="titulo">Proyectos destacados</div>
+            <div class="descripcion">
                 Algunos de los proyectos que he ido desarrollando durante el transcurso del primer año del grado
                 superior de desarrollo de aplicaciones multiplataforma son:
-            </p>
-            <ul>
-                <li>Página estilo Breaking Bad</li>
-                <p>Perteneciente a la asignatura de "Lenguaje de Marcas y Sistemas de Gestión de la Información" con el objetivo de asentar conocimientos en los lenguajes de etiquetas HTML y CSS.</p>
-                    <img src="./img/BB1.jpg" alt="Homepage">
-                    <img id="BBform" src="./img/BB2.jpg" alt="Formulario">
-                    <img id="BBtabla" src="./img/BB3.jpg" alt="Tabla de elementos">
-                <p>Se puede acceder a este proyecto a través del siguiente <a id="BBlink" href="https://github.com/AdrianGM90/BreakingBad_GitHub_Pages.git" target="_blank">link</a></p>
-                
-                <li>Calculadora Java</li>
-                <p>Trabajo grupal perteneciente a la asignatura de "Entornos de Desarrollo" con el objetivo de aprender a utilizar aserciones y pruebas unitarias sobre proyectos.</p>
+            </div>
+
+            <div class="bloque">
+                <div class="subtitulo">Página estilo Breaking Bad</div>
+                <div class="descripcion">Perteneciente a la asignatura de "Lenguaje de Marcas y Sistemas de Gestión de
+                    la Información" con
+                    el objetivo de asentar conocimientos en los lenguajes de etiquetas HTML y CSS.</div>
+                <img src="./img/BB1.jpg" alt="Homepage">
+                <img class="BBimg" src="./img/BB2.jpg" alt="Formulario">
+                <img class="BBimg" src="./img/BB3.jpg" alt="Tabla de elementos">
+                <div class="descripcion">Se puede acceder a este proyecto a través del siguiente <a class="link"
+                        href="https://github.com/AdrianGM90/BreakingBad_GitHub_Pages.git" target="_blank">link</a>.
+                </div>
+            </div>
+
+            <div class="bloque">
+                <div class="subtitulo">Calculadora Java</div>
+                <div class="descripcion">Trabajo grupal perteneciente a la asignatura de "Entornos de Desarrollo" con el
+                    objetivo de
+                    aprender a utilizar aserciones y pruebas unitarias sobre proyectos.</div>
                 <img src="./img/Calculadora.jpg" alt="Calculadora">
+            </div>
 
-                <li>Calculadora simple Bash</li>
-                <p>Perteneciente a la asignatura de "Sistemas Informáticos" con el objetivo de crear una calculadora simple utilizando el lenguaje Bash.</p>
+            <div class="bloque">
+                <div class="subtitulo">Calculadora simple Bash</div>
+                <div class="descripcion">Perteneciente a la asignatura de "Sistemas Informáticos" con el objetivo de
+                    crear una calculadora
+                    simple utilizando el lenguaje Bash.</div>
                 <img src="./img/CalculadoraBash.jpg" alt="Calculadora simple Bash">
+            </div>
+        </div>
+    </main>
 
-                <p>
-                    Puedes contactarme en la pestaña siguiente...
-                </p>
-                <a href="./contacto.html" class="enlace">Contacto</a>
-                <p>
-                    ...o volver a la página principal.
-                </p>
-                <a href="./index.html" class="enlace">Página principal</a>
-            </ul>
+    <footer>
+        <div class="descripcion">
+            Puedes contactarme en la pestaña siguiente...
+        </div>
+        <div>
+            <a href="./contacto.html" class="enlace">Contacto</a>
+        </div>
+        <div class="descripcion">
+            ...o volver a la página principal.
+        </div>
+        <div>
+            <a href="./index.html" class="enlace">Página principal</a>
+        </div>
+
+        <ul class="redesSociales">
+            <li>
+                <a href="mailto:adrian.guerrero.martinez.1990@gmail.com" target="_blank">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-guerrero-mart%C3%ADnez-430921255" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/AdrianGM90" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 
