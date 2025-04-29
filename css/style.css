@@ -401,3 +401,10 @@ header .navbar li a.linkEnUso{
     gap: 15%;
     margin: 10px;
 }
+
+textarea{
+    display: block;
+    margin: auto;
+    width: 350px;
+    resize: none;
+}
